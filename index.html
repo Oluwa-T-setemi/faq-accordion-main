@@ -28,7 +28,7 @@
     padding-top: 180px;
   }
   main{
-    height: 60%;
+    height: fit-content;
     width: 100%;
     background-color: hsl(275, 100%, 97%);
   }
@@ -45,6 +45,22 @@
   .faq-header{
     display: flex;
   }
+  .faq-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq-images{
+    position: relative;
+    height: 30px;
+    width: 30px;
+  }
+  .faq-images img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
   h4{
     font-size: 16px;
     display: flex;
@@ -60,6 +76,16 @@
     line-height: 1.5;
     display: none;
   }
+  @media(max-width: 800px){
+    header{
+      height: 30%;
+    }
+    .faqs{
+      width: 90%;
+      padding: 30px;
+    }
+
+  }
   
 </style>
 <body>
@@ -72,7 +98,13 @@
           <h1>FAQs</h1>
         </div>
         <div class="faq-1">
-          <h4>What is Frontend Mentor, and how will it help me? <img src="/assets/images/icon-plus.svg" id="img-plus-one" alt=""> <img src="/assets/images/icon-minus.svg" id="img-minus-one" alt="" style="position: absolute; right: 50px; display: none;"  ></h4>
+          <div class="faq-top">
+          <h4>What is Frontend Mentor, and how will it help me?</h4>
+          <div class="faq-images">
+            <img src="/assets/images/icon-plus.svg" id="img-plus-one" alt="">
+            <img src="/assets/images/icon-minus.svg" id="img-minus-one" alt="" style="display: none;">
+          </div>
+          </div>
           <p>
             Frontend Mentor offers realistic coding challenges to help developers improve their 
             frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
@@ -81,7 +113,13 @@
         </div>
 
         <div class="faq-2">
-          <h4>Is Frontend Mentor Free <img src="/assets/images/icon-plus.svg" id="img-plus-two" alt=""> <img src="/assets/images/icon-minus.svg" id="img-minus-two" alt="" style="position: absolute; right: 50px; display: none;" ></h4>
+          <div class="faq-top">
+          <h4>Is Frontend mentor free?</h4>
+          <div class="faq-images">
+            <img src="/assets/images/icon-plus.svg" id="img-plus-two" alt="">
+            <img src="/assets/images/icon-minus.svg" id="img-minus-two" alt="" style="display: none;">
+          </div>
+          </div>
           <p>
             Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
             option providing access to a range of projects suitable for all skill levels.
@@ -89,8 +127,13 @@
         </div>
 
         <div class="faq-3">
-          <h4>Can I use Frontend Mentor projects in my portfolio? <img src="/assets/images/icon-plus.svg" id="img-plus-three" alt=""> <img src="/assets/images/icon-minus.svg" id="img-minus-three" alt="" style="position: absolute; right: 50px; display: none; "></h4>
-
+          <div class="faq-top">
+          <h4>Can I use Frontend Mentor projects in my portfolio?</h4>
+          <div class="faq-images">
+            <img src="/assets/images/icon-plus.svg" id="img-plus-three" alt="">
+            <img src="/assets/images/icon-minus.svg" id="img-minus-three" alt="" style="display: none;">
+          </div>
+          </div>
           <p>
             Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
             way to showcase your skills to potential employers!
@@ -98,8 +141,13 @@
         </div>
         
         <div class="faq-4">
-          <h4>How can I get help if I'm stuck on a challenge? <img src="/assets/images/icon-plus.svg" id="img-plus-four" alt=""> <img src="/assets/images/icon-minus.svg" id="img-minus-four" alt="" style="position: absolute; right: 50px; display: none; "></h4>
-
+          <div class="faq-top">
+          <h4>How can I get help if I'm stuck on a challenge? </h4>
+          <div class="faq-images">
+            <img src="/assets/images/icon-plus.svg" id="img-plus-four" alt="">
+            <img src="/assets/images/icon-minus.svg" id="img-minus-four" alt="" style="display: none;">
+          </div>
+          </div>
           <p>
             The best place to get help is inside Frontend Mentor's Discord community. There's a help 
             channel where you can ask questions and seek support from other community members.
